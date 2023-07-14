@@ -1,0 +1,33 @@
+{
+  "name": "bereank/coupler",
+  "description": "A dedicated Laravel-PHP library crafted exclusively for seamless integration with the SAP Business One Service Layer API.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Berean Kibet",
+      "email": "bereankibet@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "BereanK\\Coupler\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BereanK\\Coupler\\Tests\\": "tests"
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "8.0",
+    "phpunit/phpunit": "^10.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "BereanK\\Coupler\\CouplerServiceProvider"
+      ]
+    }
+  }
+}
