@@ -2,7 +2,7 @@
 
 namespace BereanK\Sms;
 
-use BereanK\Sms\SmsServiceProvider;
+use BereanK\Coupler\CouplerServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
@@ -15,7 +15,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageProviders($app)
     {
         return [
-            SmsServiceProvider::class,
+           CouplerServiceProvider::class,
         ];
     }
 
