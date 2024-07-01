@@ -2,6 +2,8 @@
 
 namespace BereanK\Coupler\Helpers;
 
+use BereanK\Coupler\Exception\SAPException;
+
 class Query
 {
 

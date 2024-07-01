@@ -25,7 +25,8 @@ class SAPException extends \Exception
         }
 
         if ($response->getHeaders('Content-Type') == 'application/json') {
-            $message = $response->getJson()->error->message->value;
+            
+            $message = $response->getJson()->error->message;
             $erroCode = $response->getJson()->error->code;
         }
 
