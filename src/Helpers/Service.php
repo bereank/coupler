@@ -2,6 +2,8 @@
 
 namespace BereanK\Coupler\Helpers;
 
+use BereanK\Coupler\Exception\SAPException;
+
 /**
  * Service class contains methods to perform CRUD actions on a service.
  */

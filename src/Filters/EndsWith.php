@@ -3,7 +3,8 @@
 namespace BereanK\Coupler\Filters;
 use BereanK\Coupler\Filters\Filter;
 
-class EndsWith extends Filter{
+class EndsWith extends Filter
+{
     
     private $field;
     private $value;

@@ -3,7 +3,8 @@
 namespace BereanK\Coupler\Filters;
 use BereanK\Coupler\Filters\Filter;
 
-class Equal extends Filter{
+class Equal extends Filter
+{
     
     private $field;
     private $value;

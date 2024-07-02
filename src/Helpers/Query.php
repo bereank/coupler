@@ -2,6 +2,7 @@
 
 namespace BereanK\Coupler\Helpers;
 
+use BereanK\Coupler\Filters\Filter;
 use BereanK\Coupler\Exception\SAPException;
 
 class Query
@@ -67,7 +68,7 @@ class Query
      * Adds a SAPb1\Filter to filter the results. This method performs an
      * AND operation.
      */
-    public function where(Filters\Filter $filter): Query
+    public function where(Filter $filter): Query
     {
         $filter->setOperator('and');
         $this->filters[] = $filter;
@@ -78,7 +79,7 @@ class Query
      * Adds a SAPb1\Filter to filter the results. This method performs an
      * OR operation.
      */
-    public function orWhere(Filters\Filter $filter): Query
+    public function orWhere(Filter $filter): Query
     {
         $filter->setOperator('or');
         $this->filters[] = $filter;
